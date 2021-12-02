@@ -1,7 +1,10 @@
 {{page-title "CurriedTest"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<Demo as |api|>
+  {{ (api.myHelper) }}
+  <div {{api.myModifier}}>a div</div>
+
+  <api.myComponent />
+</Demo>
 
 {{outlet}}
