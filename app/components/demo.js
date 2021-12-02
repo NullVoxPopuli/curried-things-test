@@ -16,9 +16,9 @@ setComponentTemplate(
   hbs`
     {{yield
       (hash
-        a=(component this.myComponent first=1)
-        b=(helper this.myHelper 1 2)
-        c=(modifier this.myModifier 1 2)
+        myComponent=(component this.myComponent first=1)
+        myHelper=(helper this.myHelper 1 2)
+        myModifier=(modifier this.myModifier 1 2)
       )
     }}
   `,
